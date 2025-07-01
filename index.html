@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diary App - Login</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <div class="logo">
+        <img src="../assets/diary-logo.png" alt="Diary App" />
+        <h1>Diary app</h1>
+      </div>
+
+      <div style="text-align:center; margin-bottom: 1rem;">
+        <a href="landing.html" style="
+          background-color: #f7b7d7;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+        ">Home</a>
+      </div>
+
+      <h2>Hello there. Log in here:</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Your email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Open diary</button>
+      </form>
+      <p class="signup">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- Load Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>
