@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diary Dashboard</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>My Diary</h1>
+      <button id="logout-btn">Logout</button>
+      <label for="filter-date">Filter by date:</label>
+      <input type="date" id="filter-date" onchange="fetchEntries()" />
+      <div id="entries"></div>
+      <hr />
+      <h2>Create / Edit Entry</h2>
+      <form id="entry-form">
+        <input type="text" id="title" placeholder="Title" required />
+        <textarea id="content" placeholder="Your thoughts..." rows="6" required></textarea>
+        <input type="hidden" id="entry-id" />
+        <button type="submit">Save Entry</button>
+      </form>
+    </div>
+  </div>
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>
